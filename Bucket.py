@@ -16,7 +16,7 @@ parser.add_argument('files', type=str, nargs='*', help='Files with data to be bi
 args = parser.parse_args()
 #***********************************************************************
 # reading data as argument or std input
-data = np.loadtxt(fileinput.input(args.files), dtype=np.float)
+data = np.loadtxt(fileinput.input(args.files), dtype=float)
 #***********************************************************************
 
 # preparing the bins
